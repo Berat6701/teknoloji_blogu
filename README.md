@@ -24,3 +24,4 @@ teknoloji_blogu/
 └── README.md           # Proje dokümantasyonu
 
 Projeye canlı ortamda erişmek için:berat67.lovestoblog.com
+Ana github linkim:https://github.com/Berat6701
