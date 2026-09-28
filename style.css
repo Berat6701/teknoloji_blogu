@@ -1,0 +1,125 @@
+/* GENEL AYARLAR */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #f4f6f8; /* Daha yumuşak, göz yormayan arka plan */
+    color: #2d3748;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER (ÜST BİLGİ) TASARIMI - Koyu mat gri / Slate teması */
+header {
+    background-color: #1e293b; /* Göz yormayan şık koyu mat gri */
+    color: #ffffff;
+    text-align: center;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    color: #38bdf8; /* Soft açık mavi menü linkleri */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 12px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* MAKALE İÇİNDEKİ BAŞLIK ALANI (ARTICLE HEADER) */
+article header {
+    background-color: #0f172a; /* Makale içi başlık alanı için şık koyu ton */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* MAIN (ANA İÇERİK) TASARIMI */
+main {
+    display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* ARTICLE (MAKALE) TASARIMI */
+article {
+    flex: 3;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* FIGURE VE RESİM TASARIMI */
+figure {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+img {
+    border-radius: 8px;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #64748b;
+    margin-top: 10px;
+}
+
+/* ASIDE (YAN ÇUBUK) TASARIMI - Yumuşak pastel tonlar */
+aside {
+    flex: 1;
+    background-color: #f1f5f9; /* Yumuşak grimsi mavi arka plan */
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #3b82f6; /* Canlı ama göz almayan vurgu çizgisi */
+    height: fit-content;
+}
+
+/* FOOTER (ALT BİLGİ) TASARIMI */
+footer {
+    background-color: #1e293b; /* Header ile uyumlu koyu mat ton */
+    color: #94a3b8;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+/* Kutulara geçiş efekti ekleme */
+article, aside {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Makale ve Yan Çubuğun üzerine gelince hafif yükselmesi */
+article:hover, aside:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Menü linklerinin altının dolması */
+nav a {
+    position: relative;
+    padding-bottom: 4px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
